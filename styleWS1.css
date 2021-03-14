@@ -1,0 +1,208 @@
+h1,h2{
+    color: rgb(88, 56, 62);
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+header {
+    background-color: #eeb49f;
+    padding: 1.5rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header a {
+    color:rgb(88, 56, 62);
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.container{
+    width: 90%;
+    position: relative;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuIcon{
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    border-radius: 1.5px;
+}
+
+.navigation ul li a:hover{
+    background:  #ebc7ba;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+
+ul.listaguion {
+    list-style: none;
+}
+
+ul.listaguion li:before {
+    content: "- ";
+}
+
+span.event {
+    background-color: rgba(235, 217, 217, 0.808);
+    font-style: oblique;
+
+}
+
+span.event::before{
+    font-style: oblique;
+    content: "<";
+}
+
+span.event::after{
+    font-style: oblique;
+    content: ">";
+}
+
+footer{
+    font-size: 12px;
+    background: #f5d8cd;
+    margin-top: 6rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0rem;
+    font-weight: 300;
+    font-size: 14 px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    padding-top: 7rem;
+    margin: 2rem;
+}
+
+div body {
+    margin: 10rem;
+}
+
+.idc-box {    
+    background: rgba(221, 160, 221, 0);
+    border: 1px solid rgb(241, 204, 174);    
+    display: table;    
+    font-size: 95%;    
+    margin-bottom: 1em;    
+    padding: 20px;    
+    width: auto; 
+} 
+
+.idc-lista li a{
+    text-decoration: none;
+    color:rgb(88, 56, 62)
+}
+
+.idc-lista li a:hover{
+    background:  #ebc7ba;
+}
+
+.idc-lista a{
+    list-style-image: url(flower.svg);
+
+}
+
+strong {
+    font-weight: 500;
+    
+}
+
+.element {
+    background-color: rgb(218, 180, 180);
+}
+
+textarea {
+    padding: 2rem;
+}
+
+.evaluacion {
+    margin-top:  7rem;
+}
+
+
+
+
+/*Esto sirve para que este formato aplique solo cuando el media donde visualizaremos la página haga un ancho de 767 (tamaño habitual de un ipad)*/
+@media only screen and (max-width: 767px) {
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+    
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.3s linear;
+        border-radius: 1.5px;
+    }
+
+    .menuIcon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+
+
+}
+
+
+
+

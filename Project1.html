@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">      
+        <!--Las etiquetas meta (meta tags) encabezan un documento HTML y suministran información codificada a navegadores y motores de búsqueda sobre una página web-->
+        <meta name="viweport" content ="width=device-width, initial-scale=1">
+        <!-- Esto indica al navegador que el ancho de la página sea igual al ancho del dispositivo y la escala sea siempre 1 (no lo haga más pequeño)-->
+        <title>Resumen HTML y CSS</title>
+        <link rel="stylesheet" href="styleWS1.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container logo-nav-container">
+                <a href="#" class ="logo">LOGO</a>
+                <span class="menuIcon"><img src="menu.png" width="20" height="20"></span>
+                <nav class="navigation">
+                <ul>
+                    <li><a href ="#indice1"> HTML </a></li>
+                    <li><a href="#indice2"> CSS </a></li>
+                    <li><a href="#indice3"> DOM </a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <main> 
+        <div class="idc-box">
+        <p class="idc-titulo">Contenido</p>
+        <ul class="idc-lista">
+            <li><a href ="#indice1"> 1 HTML </a>
+            <ul>
+                <li><a href = "#apartado11"> 1.1 Estructura de los tags </a></li>
+                <li><a href = "#apartado12"> 1.2 Text-level tags </a></li>
+                <li><a href = "#apartado13"> 1.3 Sections </a></li>
+             </ul>
+             </li>
+             <li><a href="#indice2"> 2 CSS </a>
+             <ul>
+                <li><a href = "#apartado21"> 2.1 Block-level and indline-level elements </a></li>
+                <li><a href = "#apartado22"> 2.2 CSS Box Model </a></li>
+                <li><a href = "#apartado23"> 2.3 FlexBox </a></li>
+             </ul>
+            </li>
+            <li><a href="#indice3"> 3 DOM </a>
+                <ul>
+                   <li><a href = "#apartado31"> 3.1 The document object </a></li>
+                   <li><a href = "#apartado32"> 3.2 HTML Element </a></li>
+                   <li><a href = "#apartado33"> 3.3 Eventos </a></li>
+                   <li><a href = "#apartado34"> 3.4 Forms </a></li>
+                </ul>
+               </li>
+        </ul>
+        </div>
+        </article>
+
+        <article>
+        <h1 id="indice1">
+            HTML:
+        </h1>
+        <section>
+            <p>
+                Representación de un documento HTML: <br> <br>
+
+                <img src="arbol.png" width="300" height="150">
+            </p>
+            <h2 id="apartado11">
+                Estructura de los tags:
+            </h2>
+            <p>
+                <ul>
+                <li> DOCTYPE: Define el tipo de documento y debe ser la primera linea de un documento HTML</li> 
+                <li>HTML : Define la raíz del documento. Contiene un HEAD y un BODY (en este orden) </li>
+                    <ul>
+                    <li>Head: Contiene metadata del documento </li>
+                        - Title  <br>
+                        - Link <br>
+                        - Style <br>
+                        - Script (Para incluir código de JavaScript directamente en HTML)<br>
+                        - Meta<br>
+                        - ...<br>
+                    <li> Body: Representa el contenido del documento </li>
+                </ul>
+                </ul>
+            </p>
+            <h2 id ="apartado12">
+                Text-level tags
+            </h2>
+            <p>
+                <ul>
+                <li>&LTp&GT: Marca párrafos</li>
+                <li>&LTbr&GT: Salto de linia</li>
+                <li>&LTem&GT: <em>Emfatizar</em></li>
+                <li>&LTstrong&GT: Marca como <strong>importante</strong></li>
+                <li>&LTcode&GT</li>
+                <li>&LTpre&GT: Permite poner el texto preformateado</li>
+                <p>
+                    This is the <em>Hello, world!</em> program: <pre>
+                    #include &lt;stdio.h&gt;
+                     int main(int argc, char *argv[]) {
+                       printf("Hello, world!");
+                    }
+                    </pre>
+                </p>
+                <li>&LTa&GT: Reperesenta un hipervínculo
+                    <p>
+                        &LTa href="https://google.com"&GTGoogle&LT/a&GT &rarr;
+                        <a href="https://google.com">Google</a>
+                    </p>
+                </li>
+                </ul>
+                </p>
+
+            </p>
+            <h2 id ="apartado13">
+                Sections
+            </h2>
+            <section>
+              <ul>
+                  <li><strong>Main tag: </strong>Representa el contenido dominante del documento (debe ser único)</li>
+                  <li><strong>Article tag:</strong> Contiene una composición completa en el documento 
+                    <p>
+                    <img src="article.png" width="350" height="100">
+                    </p>
+                  </li>
+                  <li><strong>Section tag:</strong> Marca una sección generica del documento
+                    <p>
+                    <img src="Section.png" width="300" height="160">
+                    </p>
+                  </li>
+                  <li><strong>Nav tag: </strong>Marca una sección de la página que contiene links de navegación</li>
+                  <li><strong>Headings: </strong>Describe los temas que preceden desde h1 a h6</li>
+                  <li><strong>Header tag: </strong>Representa un grupo de ayudas introductorias o de navegación</li>
+                  <li><strong>Footer tag: </strong>Marca la información de la sección (autores, copyright data, documentos relacionades,etc)</li>
+                  <li><strong>Div tag: </strong>Es una marca genérica para una sección dentro del documento</li>
+              </ul>
+            </section>
+            <section>
+              <h3>
+                  Section tags diagram:
+              </h3>
+              <p>
+                <img src="diagramST.png" width="350" height="300"> 
+              </p>
+            </section>
+        </article>
+        </section>
+        <h1 id="indice2">
+            CSS:
+        </h1>
+        <section>
+            <h2 id="apartado21">
+                Block-level and indline-level elements
+            </h2>
+            <p>
+                La página es un bloque de elementos el cual está hecho de elementos inline
+            </p>
+            <p>
+                <ul>
+                 <li>
+                     Block: Representa un rectangulo horitzontal en la página </li>  
+                 <li>
+                     Inline: Representa una linea de los elementos de dentro del block.
+                 </li>
+                </ul>
+                <p>
+                    <img src="block.png" width="350" height="300"> 
+                  </p>
+                
+            </p>
+        </section>
+        <section>
+            <h2 id="apartado22">
+                CSS Box Model
+            </h2>
+            <p>
+                El modelo de cajas ("Box Model") es el comportamiento CSS que hace que todos los elementos incluidos en una página web se representen mediante cajas rectangulares.
+            </p>
+            <p>
+                Las partes que componen cada caja son:
+            </p>
+            <ol>
+               <li>Contenido (Content): Contenido HTML del elemento(palabras, imagenes, texto...). </li> 
+               <li>Relleno (Pading): Espacio libre opcional existente entre el contenido y el borde que lo encierra.</li>
+               <li>Borde(Border): Línea que encierra completamente el contenido y su relleno.</li>
+               <li>Imagen de fondo (background-image): Imagen que se muestra por detrás del contenido y el espacio de relleno.</li>
+               <li>Margen (Margin): espacio libre entre la caja y las posibles cajas adyacentes.</li>
+            </ol>
+            <p>
+                <img src="BoxModel.png" width="350" height="300">  
+            </p>
+        </section>
+        </div>
+        <section>
+            <h2 id="apartado23">FlexBox</h2>
+            <p>
+              FlexBox se basa en dos ejes: El eje principal y el eje cruzado.   
+            </p>
+            <p>
+                <h3>Eje principal (main axis)</h3>
+                El eje principal está definido los siguientes tres parámetro:
+                <ul> 
+                    <li>Flex-direction: Especifica el eje principal, posee cuatro posibles valores:</li>
+                    <ul>
+                        <li>Row o Row-rerse: El eje principal correrá a lo largo de la fila según la dirección de la línea.</li>
+                        <li>Column o Column-reverse: El eje principal correrá desde el borde superior de la página hasta el final (según la dirección del bloque). Si no se especifica ningún flex-direction por defecto estará en columna.</li>
+                    </ul>
+                    <li>
+                        Justify-content: Especifica la distribución de los hijos a lo largo del eje primario.
+                        <li>Flex-start: Los items flex se colocan comenzando desde el comienzo principal.</li>
+                        <li>Felx-end: Los items se colocan comenzando desde el final principal.</li>
+                        <li>Center:Los items flex son colocados hacia el centro de la línea. Los items flex se alinean al ras entre sí y en torno al centro de la línea</li>
+                        <li>Space-between: Los items flex se alinean uniformemente de tal manera que el espacio entre dos items adyacentes es el mismo.</li>
+                    </li>
+                    <li>
+                        Align-items: establece el valor align-self sobre todos los descendientes directos de un grupo. La propiedad align-self indica la alineación de un elemento dentro del bloque que lo contiene.
+                    </li>
+                </ul>
+
+                <p>
+                    <img src="table1.png" width="450" height="300"> 
+                </p>
+                <p>
+                    <img src="table2.png" width="450" height="300"> 
+                </p>
+                <h3>Eje cruzado (cross axis)</h3>
+            </p>
+            <p>   
+                El eje cruzado va perpendicular al eje principal. Si flex-direction del eje principal es row/row-reverse, el eje cruzado irá por las columnas y viceversa.
+            </p>
+            <p>
+                <img src="FlexBox.png" width="400" height="190"> 
+                <!-- Width: ancho, height: alto -->
+              </p>
+        </section>
+        <section>
+            <h3>Element position</h3>
+            <p>
+                Un elemento si no se especifica lo contrario su posicionado es el natural, es decir estatico (<strong>static</strong>). Se pueden sacar los elementos de su flujo local y colocarlos donde queramos. Hay tres tipos de posicionado:
+                <ul>
+                    <li>Elemento posicionado relativamente: <strong>Relative</strong> nos permite posicionar un elemento en relación a su posición estática mediante top/bottom/left/right.</li>
+                    <li>Elemento posicionado absolutamnte: <strong>Absolute</strong> permite quitar el elemento del flujo normal. Las propiedades top, right, bottom, y  left especifican el desplazamiento desde los bordes del bloque contenedor del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado).</li>
+                    <li>Elemento posicionado fijamente: <strong>Sticky</strong> permite tratar al elemento como un posicionado relativamente hasta que su bloque contenedor cruza un límit establecido y entonces pasa a ser tratado como fijo.</li>
+                </ul>
+            </p>
+        </section>
+        <article>
+            <h1 id="indice3"> The DOM</h1>
+            <section>
+            <p>
+                El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto sue structura, estilo y contenido. Principalmente conecta las páginas web a scripts o lenguajes de programación.
+            </p>
+            <h3 id="apartado31">The document object</h3>
+            <p>
+                La interfaz documento representa cualquier página web cargada en el navegador y sirve como punto de entrada al contenido de la página (el árbol DOM). La interfaz document también hereda de las interfaces Node y EventTarget.
+            </p>
+            <p>
+                <img src="Document-object.png" width="300" height="100"> 
+            </p>
+            <h3>Element queries</h3>
+            <p>
+               Se pueden buscar elementos de dentro de la página mediante diferentes métodos:
+
+               <ul class="listaguion">
+                    <li>getElementsByTagName (tag)</li>
+                    <li>getElementById (id)</li>
+                    <li>getElementsByClassName (class)</li>  <li>querySelector (selector)</li>
+                    <li>querySelectorAll (selector)</li>
+               </ul>
+               
+               
+            </p>
+
+            <h2 id="apartado32">The HTML Element</h2>
+            <p>
+               Cada elemento HTML en un documento tiene un objeto Javascript asociado de clase HTMLElement. 
+            </p>
+            </section>
+            <section>
+                <h2 id="apartado33">Eventos</h2>
+                <p>
+                    Los eventos <span class="event">event</span> son acciones u ocurrencias que suceden en el sistema que está programando y que el sistema le informa para que pueda responder de alguna manera si lo desea. Por ejemplo, si el usuario hace clic en un botón en una página web, es posible que desee responder a esa acción mostrando un cuadro de información.  
+                </p>
+                <p>
+                    Cada evento tiene un controlador (event Handler) de eventos, que es un bloque de código que se ejecutará cuando se active el evento. El oyente (event Listener) escucha si ocurre el evento y el controlados es el código que se ejecuta en respuesta a que ocurra.
+                </p>
+                <p>
+                   <strong>EventTarget</strong> es una interfaz implementada por los objetos que pueden administrar eventos y sus "listeners". Los objetos más comunes de un evento son Element, document y window.
+                </p>
+                <p>
+                    El event tiene siempre un elemento que se llama target (el target es el elemento que produce un evento).
+                </p>
+                <p>
+                    <ul class="listaguion">
+                    <li>
+                        <strong>addEventListener(event, handler)</strong>: Registra un controlador de eventos de tipo event. Cuando ocurra tal evento &rarr; ejecuta tal función.</li>
+                    <li>
+                        <strong>removeEventListener(event, handler)</strong>: Elimina un detector de eventos del EventTarget.</li>
+                    <li>
+                        <strong>dispatchEvent(event, handler)</strong>: Enviar un evento a este EventTarget. Es decir, se engaña al navegador para que este crea que ha ocurrido un evento.</li>
+                    </ul>
+                </p>
+                <h2 id="apartado34">Forms</h2>
+                <p>
+                  El elemento HTML <span class="event">form</span> representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.  
+                </p>
+                <p>
+                    Como cualquier otro elemento HTML, soporta atributos globales.
+                </p>
+                <ul class="listaguion">
+                    <li><strong>Action</strong>: Recibe una URL que se encarga de procesar los datos del formulario.</li>
+                    <li><strong>Method</strong>: Método HTTP que el navegador usa para enviar el formulario (nos dice por que método vamos a enviar la información). Este método puede ser get o post:</li>
+                        <ul class="listaguion">
+                        <li>post: Corresponde al método POST HTTP; los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidos.</li>
+                        <li>get: Corresponde al método GET HTTP; los datos del formulario son adjuntados a la URL del atributo action, con un '?' como separador.</li>
+                        </ul>
+                </ul>
+                <h3>Form structure</h3>
+                <p>
+                    El elemento HTML <span class="event"> input</span> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. 
+                </p>
+                <p>
+                    <ul>
+                        
+                        <li>Type: <span class="event">type</span> representa el tipo de control a mostrar (el tipo de entrada que queremos). Si no se especifica este atributo, su valor predeterminado es text. Los posibles valores son: button, checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week.</li>
+                        <li>Value: Determina el valor inicial de control.</li>
+                        <li>Name: Controla la variable que se va a rellenar. Nos permite establecer al servidor que valor estamos pidiendo.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Label Tag</strong>
+                </p>
+                <p>
+                    El elemento <span class="event">label</span> es la forma formal de definir una etiqueta para un control de un formulario HTML. Se crean para estar asociados a uno de los inputs (campos). 
+                </p>
+            </section>
+        </article>
+        <article>
+            <div class="evaluacion">
+            <label>Evaluación Project 1:</label>
+            <select name ="Puntuación" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <p>
+            <label> Comentarios:
+                <p>
+                <textarea name="Comentarios">
+
+                </textarea>
+                </p>
+            </label>
+            
+            </p>
+            <p>
+            <form class ="enviar" method="get" action= "https://mytechspace.talent.upc.edu/">
+                <input type="submit"></input>
+            </form>
+            </p>
+        </div>
+        </article>
+    </main>
+        <footer>
+            <p>&copy; Andrea Comabasosa</p>
+        </footer>
+        
+    <script src="button.js"></script>
+    
+    </body>
+
+</html>
