@@ -163,6 +163,47 @@ textarea {
     margin-top:  7rem;
 }
 
+#form {
+    border: 1px solid rgb(218, 180, 180);
+    width: 450px;
+    margin: auto;
+}
+
+#legend {
+    font-weight:bold;
+    font-size:12px;
+}
+
+#form ol{
+    list-style:none;
+}
+#form ol li{
+    padding-bottom:5px;
+}
+#form ol li label{
+    width:200px;
+    float:left;
+    text-align:left;
+}
+#form input[type=text] {
+    border:1px solid #CCCCCC;
+}
+#form input.enviar {
+    padding:3px;
+    color:rgb(88, 56, 62);
+    background-color:  rgb(218, 180, 180);
+    border:1px solid #f0d8d8;
+}
+
+#form input.enviar:hover {
+    padding:3px;
+    color:rgb(63, 39, 44);
+    background-color:  rgb(180, 115, 115);
+    border:1px solid #f0d8d8;
+    cursor: pointer;
+}
+
+
 
 
 

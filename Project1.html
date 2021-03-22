@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="container logo-nav-container">
-                <a href="#" class ="logo">LOGO</a>
+                <a href="#" class ="logo">ANDREA</a>
                 <span class="menuIcon"><img src="menu.png" width="20" height="20"></span>
                 <nav class="navigation">
                 <ul>
@@ -337,8 +337,13 @@
         </article>
         <article>
             <div class="evaluacion">
-            <label>Evaluación Project 1:</label>
-            <select name ="Puntuación" required>
+            
+            <p>
+                <fieldset id="form">
+                <legend>Nota final</legend>
+            <ol>
+                <li><label>Evaluación Project 1:</label>
+                <select name ="Puntuación" required>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -350,20 +355,13 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select>
-            <p>
-            <label> Comentarios:
-                <p>
-                <textarea name="Comentarios">
-
-                </textarea>
-                </p>
-            </label>
-            
-            </p>
-            <p>
+                </select></li>
+                
+                <li><label>Comentarios </label><input type="text" name="femail" size="25" /></li>
+            </ul>
             <form class ="enviar" method="get" action= "https://mytechspace.talent.upc.edu/">
-                <input type="submit"></input>
+                <input type="submit" class="enviar" value="Enviar nota final"></input>
+            </fieldset>
             </form>
             </p>
         </div>
